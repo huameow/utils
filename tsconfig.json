@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": false,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "lib": ["es6", "dom"],
+    "types": ["jest"]
+  },
+  "include": ["src/**/*", "**/*.spec.ts"],
+  "exclude": ["node_modules"]
+}
