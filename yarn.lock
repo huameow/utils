@@ -940,6 +940,11 @@ balanced-match@^1.0.0:
   resolved "http://registry.npm.aikucun.xyz/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+base64-arraybuffer@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.aikucun.xyz/base64-arraybuffer/-/base64-arraybuffer-0.2.0.tgz#4b944fac0191aa5907afe2d8c999ccc57ce80f45"
+  integrity sha512-7emyCsu1/xiBXgQZrscw/8KPRT44I4Yq9Pe6EGs3aPRTsWuggML1/1DTuZUuIaJPIm1FTDUVXl4x/yW8s0kQDQ==
+
 base@^0.11.1:
   version "0.11.2"
   resolved "http://registry.npm.aikucun.xyz/base/-/base-0.11.2.tgz#7bde5ced145b6d551a90db87f83c558b4eb48a8f"
@@ -1230,11 +1235,6 @@ concat-map@0.0.1:
   resolved "http://registry.npm.aikucun.xyz/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-confusing-browser-globals@^1.0.9:
-  version "1.0.9"
-  resolved "http://registry.npm.aikucun.xyz/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
-  integrity sha1-crwTtIPAJ2gBaBhx1ImFFvj1T90=
-
 contains-path@^0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.aikucun.xyz/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
@@ -1287,6 +1287,18 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto-js@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.aikucun.xyz/crypto-js/-/crypto-js-4.0.0.tgz#2904ab2677a9d042856a2ea2ef80de92e4a36dcc"
+  integrity sha1-KQSrJnep0EKFai6i74DekuSjbcw=
+
+css-line-break@1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.aikucun.xyz/css-line-break/-/css-line-break-1.1.1.tgz#d5e9bdd297840099eb0503c7310fd34927a026ef"
+  integrity sha512-1feNVaM4Fyzdj4mKPIQNL2n70MmuYzAXZ1aytlROFX1JsOo070OsugwGjj7nl6jnDJWHDM8zRZswkmeYVWZJQA==
+  dependencies:
+    base64-arraybuffer "^0.2.0"
 
 cssom@^0.4.4:
   version "0.4.4"
@@ -1539,24 +1551,6 @@ escodegen@^1.14.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
-
-eslint-config-airbnb-base@^14.1.0:
-  version "14.1.0"
-  resolved "http://registry.npm.aikucun.xyz/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.1.0.tgz#2ba4592dd6843258221d9bff2b6831bd77c874e4"
-  integrity sha1-K6RZLdaEMlgiHZv/K2gxvXfIdOQ=
-  dependencies:
-    confusing-browser-globals "^1.0.9"
-    object.assign "^4.1.0"
-    object.entries "^1.1.1"
-
-eslint-config-airbnb@^18.1.0:
-  version "18.1.0"
-  resolved "http://registry.npm.aikucun.xyz/eslint-config-airbnb/-/eslint-config-airbnb-18.1.0.tgz#724d7e93dadd2169492ff5363c5aaa779e01257d"
-  integrity sha1-ck1+k9rdIWlJL/U2PFqqd54BJX0=
-  dependencies:
-    eslint-config-airbnb-base "^14.1.0"
-    object.assign "^4.1.0"
-    object.entries "^1.1.1"
 
 eslint-config-prettier@^6.11.0:
   version "6.11.0"
@@ -2188,6 +2182,13 @@ html-escaper@^2.0.0:
   version "2.0.2"
   resolved "http://registry.npm.aikucun.xyz/html-escaper/-/html-escaper-2.0.2.tgz#dfd60027da36a36dfcbe236262c00a5822681453"
   integrity sha1-39YAJ9o2o238viNiYsAKWCJoFFM=
+
+html2canvas@^1.0.0-rc.5:
+  version "1.0.0-rc.5"
+  resolved "http://registry.npm.aikucun.xyz/html2canvas/-/html2canvas-1.0.0-rc.5.tgz#4ee3cac9f6e20a0fa0c2f35a6f99c960ae7ec4c1"
+  integrity sha1-TuPKyfbiCg+gwvNab5nJYK5+xME=
+  dependencies:
+    css-line-break "1.1.1"
 
 http-signature@~1.2.0:
   version "1.2.0"
@@ -3476,15 +3477,6 @@ object.assign@^4.1.0:
     function-bind "^1.1.1"
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
-
-object.entries@^1.1.1:
-  version "1.1.2"
-  resolved "http://registry.npm.aikucun.xyz/object.entries/-/object.entries-1.1.2.tgz#bc73f00acb6b6bb16c203434b10f9a7e797d3add"
-  integrity sha1-vHPwCstra7FsIDQ0sQ+afnl9Ot0=
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.17.5"
-    has "^1.0.3"
 
 object.pick@^1.3.0:
   version "1.3.0"

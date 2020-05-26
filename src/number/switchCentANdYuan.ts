@@ -7,7 +7,7 @@ enum PriceStage {
 
 type Stage = PriceStage.YUAN | PriceStage.CENT;
 
-export default function switchCentANdYuanProps(
+export default function switchCentAndYuanProps(
   value: string,
   stage: Stage = PriceStage.YUAN
 ): number {
