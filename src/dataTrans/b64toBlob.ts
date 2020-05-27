@@ -1,4 +1,8 @@
-const b64toBlob = (b64Data, contentType = "", sliceSize = 512): Blob => {
+const b64toBlob = (
+  b64Data: string,
+  contentType: string = "",
+  sliceSize = 512
+): Blob => {
   const byteCharacters = atob(b64Data);
   const byteArrays = [];
 

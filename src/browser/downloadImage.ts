@@ -16,7 +16,11 @@ function roundedImage(ctx, x, y, width, height, radius) {
   ctx.closePath();
 }
 
-export function drawImage({ url, width, height }, id, hasRadius = false) {
+export function drawImage(
+  { url, width, height },
+  id: string,
+  hasRadius = false
+): void {
   const downloadedImg = new Image();
   downloadedImg.crossOrigin = "Anonymous";
   function imageReceived() {
@@ -61,9 +65,9 @@ function download(canvas, fileName = "shareImage") {
   window.URL.revokeObjectURL(anchor.href);
 }
 
-const downloadedImg = (id): Promise<unknown> => {
+export const downloadedImage = (id: string): Promise<unknown> => {
   return new Promise((resolve, reject) => {
-    const source = document.querySelector(id);
+    const source: HTMLElement = document.querySelector(id);
     if (!source) {
       reject("下载失败!");
     }
@@ -75,5 +79,3 @@ const downloadedImg = (id): Promise<unknown> => {
     );
   });
 };
-
-export default downloadedImg;

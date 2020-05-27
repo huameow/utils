@@ -1,4 +1,8 @@
-const validImage = (url, successFn, failFn) => {
+const validImage = (
+  url: string,
+  successFn: Function,
+  failFn: Function
+): void => {
   const img = new Image();
   img.onload = () => {
     successFn();

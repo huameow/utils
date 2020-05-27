@@ -1,5 +1,5 @@
 // gbk: 2, utf-8: 3
-const getStrLength = (str: string, charset = "gbk") => {
+const getStrLength = (str: string, charset = "gbk"): number => {
   const chineseStep = charset === "gbk" ? 2 : 3;
   let len = 0;
   for (let i = 0; i < str.length; i++) {

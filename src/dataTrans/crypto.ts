@@ -2,7 +2,7 @@ import Utf8 from "crypto-js/enc-utf8";
 import Base64 from "crypto-js/enc-base64";
 import Md5 from "crypto-js/md5";
 
-const crypto = (data, needJoin = false): string => {
+const crypto = (data: unknown, needJoin = false): string => {
   let newData = JSON.parse(JSON.stringify(data));
   if (needJoin) {
     const keys = Object.keys(newData).sort();

@@ -1,13 +1,13 @@
-import idID from "./isID";
+import isID from "./isID";
 
 describe("idID", () => {
   it("wudbhagsdhh dgshahsd", () => {
-    expect(idID("wudbhagsdhh dgshahsd")).toBe(false);
+    expect(isID("wudbhagsdhh dgshahsd")).toBe(false);
   });
   it("123", () => {
-    expect(idID("123")).toBe(false);
+    expect(isID("123")).toBe(false);
   });
   it("123216789191679128", () => {
-    expect(idID("123216789191679128")).toBe(false);
+    expect(isID("123216789191679128")).toBe(false);
   });
 });

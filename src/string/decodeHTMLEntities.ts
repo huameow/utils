@@ -1,4 +1,4 @@
-const decodeHTMLEntities = (str: string) => {
+const decodeHTMLEntities = (str: string): string => {
   const element = document.createElement("div");
   if (str && typeof str === "string") {
     // strip script/html tags

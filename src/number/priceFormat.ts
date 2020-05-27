@@ -1,22 +1,19 @@
 import toPrice from "./toPrice";
 
-// const toUSD = (amount: any) => amount.toLocaleString('en-US', {
-//   style: 'currency',
-//   currency: 'USD',
-// });
+enum Languages {
+  ZH = "zh",
+  EN = "en",
+}
 
-// const toRMB = (amount: any) => amount.toLocaleString('zh-CH', {
-//   style: 'currency',
-//   currency: 'CNY',
-// });
+type Language = Languages.ZH | Languages.EN;
 
 export default function priceFormat(
   value: string | number,
-  local = "zh"
+  local: Language = Languages.ZH
 ): string {
   const number = toPrice(value);
   let currencyDisplay = "¥";
-  if (local === "en") {
+  if (local === Languages.EN) {
     currencyDisplay = "$";
   }
   return `${currencyDisplay}${number}`;

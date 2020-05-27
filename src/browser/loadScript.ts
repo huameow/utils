@@ -1,4 +1,4 @@
-const loadScript = (src): Promise<unknown> => {
+const loadScript = (src: string): Promise<unknown> => {
   return new Promise((resolve, reject) => {
     const scriptNode = document.createElement("script");
     scriptNode.type = "text/javascript";
