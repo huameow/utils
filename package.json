@@ -1,9 +1,12 @@
 {
   "name": "@huameow/utils",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "utils",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rollup -c",
     "build:type": "tsc -p ./tsconfig.type.json",
@@ -14,8 +17,8 @@
     "type": "git",
     "url": "git+git@github.com:huameow/utils.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "cieldon32@gmail.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/huameow/utils/issues"
   },
