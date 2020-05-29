@@ -13,7 +13,7 @@ formatDate("2020-01", 'YY-MM-DD') => 2020-01-01
 ```
 ## api
 
-| 方法 | 说明 |
+| method | description  |
 | --- | --- |
 | formatDate |  (<br />  value?: string | number | Date,<br />  formatStr = "YY-MM-DD hh:mm:ss"<br />): string |
 | isDate | (value: string | number | Date): boolean |
