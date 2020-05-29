@@ -45,6 +45,8 @@ import isPostalCode from "./validate/isPostalCode";
 import isQQ from "./validate/isQQ";
 import isURL from "./validate/isURL";
 
+import checkHasProperty from "./array/checkHasProperty";
+
 export {
   formatDate,
   isDate,
@@ -87,4 +89,5 @@ export {
   isPostalCode,
   isQQ,
   isURL,
+  checkHasProperty,
 };
