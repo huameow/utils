@@ -1,6 +1,6 @@
 {
   "name": "@huameow/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "utils",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.esm.js",

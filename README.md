@@ -15,6 +15,8 @@ formatDate("2020-01", 'YY-MM-DD') => 2020-01-01
 
 | method | description  |
 | --- | --- |
+| <br />checkHasProperty<br /> | <br /><T, K extends Extract<keyof T, string \| string[]>>(value: T[K], key: K, items: T[]): boolean<br /> |
+| <br />sort<br /> | <br />{binarySearch, heapSort, insertSort, mergeSort, quickSort}<br /> |
 | formatDate |  (<br />  value?: string | number | Date,<br />  formatStr = "YY-MM-DD hh:mm:ss"<br />): string |
 | isDate | (value: string | number | Date): boolean |
 | toDate | <br />(value: string | number | Date): number<br /> |
@@ -55,4 +57,3 @@ formatDate("2020-01", 'YY-MM-DD') => 2020-01-01
 | <br />isPostalCode<br /> | <br />(value: number | string): boolean<br /> |
 | <br />isQQ<br /> | <br />(value: number | string): boolean<br /> |
 | <br />isURL<br /> | <br />(value: string): boolean<br /> |
-| <br />checkHasProperty<br /> | <br /><T, K extends Extract<keyof T, string \| string[]>>(value: T[K], key: K, items: T[]): boolean<br /> |

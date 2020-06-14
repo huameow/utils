@@ -46,6 +46,7 @@ import isQQ from "./validate/isQQ";
 import isURL from "./validate/isURL";
 
 import checkHasProperty from "./array/checkHasProperty";
+import * as sort from './sort';
 
 export {
   formatDate,
@@ -90,4 +91,5 @@ export {
   isQQ,
   isURL,
   checkHasProperty,
+  sort
 };
